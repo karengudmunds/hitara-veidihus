@@ -1,0 +1,682 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+[class*=grid-], [class*=grid_], [class~=grid] {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 ;
+}
+
+img {  max-width: 100%;  }
+
+/* Optional padding to override default gridlex columns */ 
+[class*=col] { padding: 0; }
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/* Utility Classes  */
+
+.tall-50 {   min-height: 50vh;  }
+.tall-60 {   min-height: 60vh;  }
+.tall-70 {   min-height: 70vh;  }
+.tall-80 {   min-height: 80vh;  }
+.tall-90 {   min-height: 90vh;  }
+
+
+
+/* Padding Utility Classes */
+
+.padded-1    {   padding: 1rem;  }
+.padded-2    {   padding: 2rem;  }
+
+.padded-sm { padding: 2.5%; }
+.padded    { padding: 5%;   }
+.padded-7  { padding: 7%;   }
+.padded-lg { padding: 10%;  }
+
+.padded-05 { padding: 0.5rem; }
+.padded-1, 
+.grid-padded-1  { padding: 1rem;  }
+.padded-2, 
+.grid-padded-2  { padding: 2rem;  }
+.padded-10      { padding: 10%;    }
+
+.padded-t  { padding-top: 5%;    }
+.padded-b  { padding-bottom: 5%; }
+.padded-l  { padding-left: 5%;   }
+.padded-r  { padding-right: 5%;  }
+
+.padded-tb  { padding-top: 5%; padding-bottom: 5%; }
+.padded-lr  { padding-left: 5%; padding-right: 5%; }
+.padded-lr-2  { padding-left: 2rem; padding-right: 2rem; }
+
+
+.padded-t-1 { padding-top: 1rem; }
+.padded-b-1 { padding-bottom: 1rem; }
+.padded-l-1 { padding-left: 1rem; }
+.padded-r-1 { padding-right: 1rem; }
+
+.padded-t-2 { padding-top: 2rem; }
+.padded-b-2 { padding-bottom: 2rem; }
+.padded-l-2 { padding-left: 2rem; }
+.padded-r-2 { padding-right: 2rem; }
+
+.padded-0 { padding: 0; }
+.padded-t-0 { padding-top: 0; }
+.padded-b-0 { padding-bottom: 0; }
+.padded-l-0 { padding-left: 0; }
+.padded-r-0 { padding-right: 0; }
+
+
+/* Margin Utility Classes */ 
+
+.margin-t { margin-top: 5%; }
+.margin-b { margin-bottom: 5%; }
+.margin-bottom { margin-bottom: 5% }
+.margin-l { margin-left: 5%; }
+.margin-r { margin-right: 5%; }
+
+.margin-t-1 { margin-top: 1rem; }
+.margin-b-1 { margin-bottom: 1rem; }
+.margin-l-1 { margin-left: 1rem; }
+.margin-r-1 { margin-right: 1rem; }
+
+.margin-t-2 { margin-top: 2rem; }
+.margin-b-2 { margin-bottom: 2rem; }
+.margin-l-2 { margin-left: 2rem; }
+.margin-r-2 { margin-right: 2rem; }
+
+.margin-t-0 { margin-top: 0; }
+.margin-b-0 { margin-bottom: 0; }
+.margin-l-0 { margin-left: 0; }
+.margin-r-0 { margin-right: 0; }
+
+.margin-tb { margin-top: 5%; margin-bottom: 5%; }
+.margin-lr { margin-left: 5%; margin-right: 5%; }
+
+
+.bg-featured { background-color: #1C2A2C;  }
+.bg-dark     { background-color: #24282B;  }
+.bg-light { background-color: #fefefe; }
+
+.light-text { color: #fefefe; }
+.featured-text-dark { color: #24282B; }
+.featured-text-light {color: #4e91ad; }
+
+.left     { text-align: left;   }
+.center   { text-align: center; }
+.right    { text-align: right;  }
+
+.fixed {  background-attachment: fixed; }
+
+/* Aspect Ratio  */
+.portrait-tall { padding-bottom: 175%; }
+.portrait { padding-bottom: 125%; }
+.square { padding-bottom: 100%; }
+.landscape { padding-bottom: 66%; }
+.landscape-wide { padding-bottom: 56%; }
+
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
+
+
+
+
+
+/* Typography  */
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+    text-transform: uppercase; 
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 7rem;
+}
+
+h1 span {
+    display: block;
+    font-size: 2rem;
+    line-height: 0.9;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+.not-bold {
+    font-weight: 400;
+}
+
+.subtle { 
+    opacity: 0.8;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+p, li {
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+p:last-child, 
+li:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    color: inherit; 
+}
+
+nav a {
+    text-decoration: none;
+    padding: .5%;
+}
+
+.fab {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+a:hover {
+    color: #4e91ad;
+}
+
+.text-small { font-size: 1rem;}
+.text-medium { font-size: 2rem;}
+.text-lg  { font-size: 3.5rem;  }
+.text-xl  { font-size: 4.5rem; }
+.text-large {font-size: 5rem; }
+.text-xxl { font-size: 8.5rem; }
+.text-bold { font-weight: bold; }
+
+.emphasis       { font-size: 1.2rem; }
+
+
+.uppercase { text-transform: uppercase;}
+.letter-spacing { letter-spacing: 0.2rem;}
+.line-height { line-height: 1;}
+.line-height-p {line-height: 1.9; }
+
+
+/* ----------------- header and footer --------------*/
+
+header {
+    padding: 1% 5%;
+  }
+
+  
+  .emphasis-button {
+    border: 2px solid;
+    margin-left: 0.5rem;
+    padding: 1% 2%;
+  }
+  
+
+footer h2 {
+    font-size: 6rem;
+    color: white;
+    line-height: 1;
+}
+
+footer p { 
+    margin-bottom: 0.2rem;
+}
+
+
+/*  hamburger menu  */
+
+.hamburger-button {
+    cursor: pointer;
+    padding: 0.5rem;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 2.5rem;
+    line-height: 0.8;
+    position: absolute;
+    right: 5%;
+    top: 2rem;
+    z-index: 4;
+  }
+  
+  /* Styles when the hamburger button is active  */
+  .hamburger-button.active {
+    color: #fefefe;
+    padding-top: 2rem;
+  }
+  
+ 
+  .mobile-menu {
+    display: none; 
+    background-color: #1C2A2C;
+    color: #fefefe;
+    padding: 10%;
+    position: fixed; 
+    z-index:3;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 5rem;
+  }
+  
+  .mobile-menu a {
+    text-decoration: none; 
+    color: inherit; 
+    padding: 3%;
+    display: block;
+    font-weight: normal;
+    font-size: 1.3rem;
+  }
+
+  .inline-block a {
+    display: inline-block;
+  }
+
+
+/* background images  */
+
+.bg-image {
+    background-color: #24282B; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/images/the-bunker-1.jpg');
+}
+
+.logo {
+    max-width: 30%;
+}
+
+/* image gallery section  */
+.gallery [class*="col-"] {
+    padding: 0.5%;
+  }
+
+  .gallery .gallery-item {
+    border-bottom: none;
+}
+
+/* Background of gallery when active  */
+.lg-backdrop {
+    background-color: rgb(20,20,20);
+}
+
+.lg-backdrop.in {
+    opacity: 0.95;
+}
+
+/*  image gallery section ends */
+
+
+
+.bg-herobanner {
+    background-image: url('/images/laxaikjos7.jpg');
+    background-position: 50% 25%;
+}
+
+.bg-riverlodge {
+    background-image: url('/images/laxaikjos2.jpg');
+}
+
+.bg-summer {
+    background-image: url('/images/laxaikjos1.jpg');
+    background-position: 50% 40%;
+}
+
+.bg-river {
+    background-image: url('/images/laxaikjos3.jpg');
+}
+
+.bg-lodge {
+    background-image: url('/images/laxaikjos8.jpg');
+    background-position: 50% 85%;
+}
+
+.bg-guides {
+    background-image: url('/images/laxaikjos6.jpg');
+}
+
+.bg-map {
+    background-image: url('/images/the-bunker-6.png');
+}
+
+.bg-padded {
+    padding-bottom: 30%;
+}
+
+.social-banner {
+    background-position: 50% 17%;
+}
+
+
+        /* Contact form  */
+
+        button, input, select, textarea {
+            font-family: inherit;
+            font-size: 100%;
+            box-sizing: border-box;
+            -webkit-appearance: none;
+        }
+
+        input,
+        textarea {
+            border-style: solid;
+            border: 2px solid #FCBA6E;
+            padding: 0.8em;
+            display: block;
+            width: 100%;
+            font-size: 1rem;
+            /* vertical-align: top; */
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #FCBA6E;
+        }
+
+        textarea {
+            min-height: 6rem;
+        }
+
+        input[type="submit"] {
+            width: auto;
+            display: block;
+        }
+
+        /* // Work with me form */
+
+        .enquiry input {
+            font-family: lora, serif;
+        }
+
+
+        .floating-input {
+            position: relative;
+            padding-top: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .input-text {
+            font-size: 1.1rem;
+            line-height: 1.2;
+            display: block;
+            margin: 0;
+            width: 90%;
+            border: none;
+            border-bottom: 2px solid rgb(95,90,90);
+            transition: all 0.5s;
+            padding: 0.7rem 0 0.5rem;
+            background-color: rgba(0,0,0,0);
+        }
+
+        .enquiry textarea {
+            resize: none;
+        }
+
+        .input-text:focus {
+            border-color: #4e91ad;
+        }
+
+        .input-label {
+            display: block;
+            position: absolute;
+            top:0;
+            font-family: lora, serif;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            color: rgb(90,90,90);
+        }
+
+        .input-text:placeholder-shown + .input-label {
+            /* While the placeholder is visible, we want to hide the label. */
+            visibility: hidden;
+            z-index: -1;
+        }
+
+        .input-text:not(:placeholder-shown) + .input-label,
+        .input-text:focus:not(:placeholder-shown) + .input-label {
+            /**
+            * While the placeholder is not shown - i.e. the input has a value - we want
+            * to animate the label into the floated position.
+            */
+            visibility: visible;
+            z-index: 1;
+            opacity: 1;
+            /**
+            * These props will be added in the demo once variables are defined:
+            *
+            * transform
+            * transition
+            *
+            * They will give the label floated positioning and styling.
+            */
+        }
+
+        .vertical-form-text {
+            transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+            font-size: 3.3rem;
+            position: absolute;
+            white-space: nowrap;
+        }
+
+        .basics-text {
+            left: 17%; 
+            bottom: 3rem;
+        }
+
+        .project-text {
+            left: 17%;
+            top: 70rem;
+        }
+
+        .button-solid {
+        background-color: #24282B;
+        color: #fff;
+        border: none;
+        padding: 0.8rem 2.5rem 0.6rem;
+        }
+
+        .button-solid:hover {
+        background-color: #4e91ad;
+        color: #fff;
+        }
+
+        /* .contact-page a {
+        text-decoration: none;
+        color: #FCBA6E;
+        font-size: 16px;
+        margin-top: 3rem;
+        } */
+
+        /* Contact form ends  */
+
+/*  ----------- back to top ------------------- */
+
+        .back-to-top a {
+            padding: 0.3em 0.3rem 0.1rem 0.3rem;
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            text-align: right;
+            line-height: 1;
+            transition: .5s all;
+            font-size: 16px;
+            transition: 0.5s all;
+            border: 1px solid;
+        }
+
+
+        .back-to-top  {
+            position: fixed;
+            bottom:1rem;
+            right: 1rem;
+            z-index: 2;
+        }
+
+        .back-to-top a:hover {
+            color: #4e91ad;
+            border-color: #4e91ad;
+        }
+
+
+/* ------------ Responsive Styles ----------------------- */
+
+/* General CSS Responsive Styles (Apply everywhere unless overriden) */ 
+
+.show-xs, 
+.show-sm,
+.show-md {
+	display: none; 
+}
+
+.inline { 
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* ------- MD Media Query (64em / 1024px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media(max-width:64em) {
+
+	.show-md { display: block; }
+	.hide-md { display: none;  }
+
+}
+
+
+
+/* SM- max-width in pixels approximately 768px - To figure out the number in pixels = 48x16=768px */
+
+@media (max-width: 48em) {
+    .show-sm { display: block; }
+	.hide-sm { display: none;  }
+
+    .sm-font-small { font-size: 1rem;}
+    .sm-font-small-2-2 { font-size: 2.2rem;}
+    .sm-font-small-1-7 { font-size: 1.7rem;}
+    .sm-font-small-1-9 { font-size: 1.9rem;}
+    .sm-font-medium { font-size: 2.9rem;}
+    .sm-font-large { font-size: 3.3rem;}
+    .sm-font-xl-large { font-size: 4rem;}
+  
+    .sm-text-center { text-align: center; }
+    .sm-text-left   { text-align: left; }
+    .sm-text-right  { text-align: right; }
+  
+    .sm-padded     { padding: 5%; }
+    .sm-padded-2  {padding: 2rem;}
+    .sm-padded-1   { padding: 1rem; }
+    .sm-padded-05  { padding: 0.5rem; }
+  
+    .sm-padded-t-0 { padding-top: 0; }
+    .sm-padded-b-0 { padding-bottom: 0; }
+  
+    .sm-padded-t-1 { padding-top: 1rem; }
+    .sm-padded-b-1 { padding-bottom: 1rem; }
+  
+    .sm-padded-t-2 { padding-top: 2rem; }
+    .sm-padded-b-2 { padding-bottom: 2rem; }
+  
+    .sm-margin-t-0 { margin-top: 0; }
+    .sm-margin-b-0 { margin-bottom: 0; }
+  
+  
+    .sm-margin-t-1 { margin-top: 1rem; }
+    .sm-margin-b-1 { margin-bottom: 1rem; }
+    .sm-margin-l-1 { margin-left: 1rem; }
+    .sm-margin-r-1 { margin-right: 1rem; }
+  
+    .sm-margin-t-2 { margin-top: 2rem; }
+    .sm-margin-b-2 { margin-bottom: 2rem; }
+    .sm-margin-l-2 { margin-left: 2rem; }
+    .sm-margin-r-2 { margin-right: 2rem; }
+  
+    .sm-margin-top-negative-5 { margin-top: -5rem; }
+  
+    .sm-landscape     { padding-bottom: 66% ; }
+    .sm-portrait-tall { padding-bottom: 175%; }
+    .sm-portrait      { padding-bottom: 125%; }
+    .sm-square        { padding-bottom: 100%; }
+  
+    .sm-tall-40 { min-height: 40vh; }
+    .sm-tall-50 { min-height: 50vh; }
+    .sm-tall-60 { min-height: 60vh; }
+    .sm-tall-70 { min-height: 70vh; }
+
+    .sm-fixed-banner { background-attachment: scroll; }
+
+    .flex-flip-sm {  flex-direction: column-reverse;  }
+
+    .position-fixed { position: fixed;}
+
+    h1 {   font-size: 4rem; }
+
+    footer h2 { font-size: 3rem;}
+
+    .social-banner {
+        background-image: none;
+        background-color: #1C2A2C;
+        min-height: 30vh;
+    }
+
+    .basics-text {
+        font-size: 2rem;
+        left: 2.5rem;
+        bottom: 33%;
+    }
+
+    .project-text {
+        left: 2.5rem;
+        font-size: 2rem;
+        top: 57rem;
+    }
+
+    .input-text {
+        font-size: 0.9rem;
+    }
+
+
+}
+
+
+/* ------- XS Media Query (36em / 576px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media(max-width:36em) {
+
+    .show-xs { display: block; }
+    .hide-xs { display: none;  }
+
+.subtle-heading-xs {
+  font-weight: 300;
+  font-family: 'Martel', serif; 
+}
+}

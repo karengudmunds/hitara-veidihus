@@ -1,0 +1,151 @@
+<!DOCTYPE html> 
+<html>
+<head>  
+
+ <!-- The title for SEO & browser tabs -->
+    <title>  {{page.title}}  </title>
+
+<!-- Viewport meta for responsive websites -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Gridlex  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+
+
+<!-- font awesome  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Meta data for SEO purposes. -->
+<meta name="description" content="{{page.seo.meta-description}}" />
+<meta name="keywords" content="{{page.seo.meta-keywords}}" />
+
+
+<!--  Social media sharing META Tags -->
+<meta property="og:title" content="{{page.title}}" />
+<meta property="og:description" content="{{page.description}}" />
+<meta property="og:image" content="{{page.meta-image}}" />
+<meta property="og:url" content="{{page.url}}" />
+<meta name="twitter:card" content="{{page.seo.meta-description}}" />
+<meta name="og:site_name" content="{{page.seo.title}}" />
+
+<!--  Fav icon links  -->
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+<link rel="manifest" href="/icons/site.webmanifest">
+<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/icons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+
+<!-- google fonts  - Raleway -->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,900;1,300;1,400;1,500;1,900&display=swap" rel="stylesheet">
+
+	<!-- Google Font  - Didot -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400&display=swap" rel="stylesheet"> 
+
+    <!-- Lightgallery for pop-ups  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/css/lightgallery-bundle.min.css" integrity="sha512-7xAjdVc23n18sYEAZKa79271IRUS1XzylIyJ8feyXvjrbbr4oId92993EiGTAP63Ob6KplRnmbNmBOg6bpLjYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<!-- My own custom stylesheet -->
+<link rel="stylesheet" href="/style.css"> 
+
+</head>
+
+<body> 
+
+    <!--  This is the header of the page  -->
+    <header class="grid" id="header">
+      <div class="col-4_sm-12-middle padded-1 center-sm">
+        <a href="/"> <img src="/images/kjosLogo.png" class="logo" /> </a> 
+    </div>
+        <nav class="col-8-middle right hide-sm">
+          <a href="#section1"> About </a>
+          <a href="/gallery.html"> Gallery </a>
+          <a href="/contact.html">  Contact </a>
+          <a href="/contact.html" class="emphasis-button">  Book now </a>
+        </nav>
+        <div class="col-7 right show-sm">
+          <a class="hamburger-button"> &#9776; </a>
+        </div>
+      </header>
+
+
+      <div class="mobile-menu"> 
+        <nav> 
+          <a href="/"> Home </a>
+          <!-- <a href="#section1"> About  </a> -->
+          <a href="/gallery"> Gallery </a>
+          <a href="/contact"> Contact us </a>
+        </nav>
+      </a>
+    
+      <div class="inline-block">
+      <a class="inline-block" href="https://www.instagram.com/laxaikjos" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a class="inline-block" href="https://www.facebook.com/laxainkjos/" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+    </a> 
+    </div>
+      </div> 
+
+
+
+    {{content}}
+
+
+
+    <!-- Footer -->
+
+    <footer class="grid-spaceBetween padded bg-dark light-text tall-50 sm-padded-2">
+        <div class="col-6_sm-12">
+            <h2 class="text-lg"> Laxá í Kjós </h2>
+            <p class="margin-b-2 editable"> The river is one of the top ten producing Atlantic Salmon rivers in Iceland. Running through a deep glacial valley
+                is an exceptional scenic and varied river with first class accommdation. </p>
+            <a href="/contact.html" class="subtle-button"> BOOK NOW > </a>
+        </div>
+        <nav class="col-4-middle_sm-12 light-text sm-margin-t-1">
+            <p> <strong> Location: </strong>
+              <a href="https://goo.gl/maps/M4wNXgSBm2N4JiSh8" target="_blank"> View on Google Maps </a>
+            </p>
+            <!-- <p> <strong> Trip Advisor: </strong>
+              <a href="https://www.tripadvisor.com/Hotel_Review-g608486-d16973157-Reviews-Sandi_Kala_Villas-Kerobokan_North_Kuta_Bali.html" target="_blank"> See Reviews </a>
+            </p> -->
+            <p> <strong> Phone & WhatsApp: </strong>  +354 845 4595 </p>
+            <p> <strong> Email: </strong> halli@laxaikjos.is </p>
+            <p> <strong> Instagram: </strong>
+              <a href="https://www.instagram.com/laxaikjos" target="_blank"> @laxaikjos </a>
+            </p>
+            <p> <strong> Video: </strong>
+              <a href="https://vimeo.com/692079418" target="_blank"> Click here </a>
+            </p>
+      
+        </nav>
+    <!-- <div class="col-12-bottom center light-text">
+       <p class="subtle"> Copyright 2021 @karengudmunds </p> 
+    </div> -->
+
+    </footer>
+
+    <div class="back-to-top">
+        <a href="#header"> ^ </a>
+      </div>
+
+
+      <!-- Lightgallery for pop-ups  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/lightgallery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Custom Script -->
+    <script src="/main.js"></script>
+
+    </body>
+    </html>

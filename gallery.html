@@ -1,0 +1,51 @@
+---
+layout: default
+title:  Gallery
+gallery:
+  - column-size: col-6
+    aspect-ratio: landscape
+    background_image: /images/laxaikjos1.jpg
+  - column-size: col-6
+    aspect-ratio: landscape
+    background_image: /images/laxaikjos2.jpg
+  - column-size: col-4_sm-12
+    aspect-ratio: square
+    background_image: /images/laxaikjos3.jpg
+  - column-size: col-4_sm-12
+    aspect-ratio: square
+    background_image: /images/laxaikjos4.jpg
+  - column-size: col-4_sm-12
+    aspect-ratio: square
+    background_image: /images/laxaikjos8.jpg
+  - column-size: col-12
+    aspect-ratio: landscape
+    background_image: /images/laxaikjos5.jpg
+  - column-size: col-6
+    aspect-ratio: landscape
+    background_image: /images/laxaikjos6.jpg
+  - column-size: col-6
+    aspect-ratio: landscape
+    background_image: /images/laxaikjos7.jpg
+seo:
+    meta-description: 
+    meta-keywords:
+    featured-image_path:
+    hide-from-google: false
+_comments:
+    layout: Don't change
+    title: Max 70 characters
+    featured-image_path: Landscape 1200 x 600px
+---
+
+
+<div class="padded gallery grid" id="lightgallery">
+    {% for item in page.gallery %}
+  
+      <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
+        <div class="bg-image {{item.aspect-ratio}}" 
+            style="background-image: url('{{item.background_image}}');">
+        </div>
+      </a> 
+  
+    {% endfor %}
+  </div>
