@@ -335,30 +335,31 @@ footer p {
 
 
 .bg-herobanner {
-    background-image: url('/images/laxaikjos7.jpg');
-    background-position: 50% 25%;
+    background-image: url('/images/hitara18.JPG');
+    background-position: 50% 50%;
 }
 
 .bg-riverlodge {
-    background-image: url('/images/laxaikjos2.jpg');
+    background-image: url('/images/hitara4.jpeg');
 }
 
 .bg-summer {
-    background-image: url('/images/laxaikjos1.jpg');
-    background-position: 50% 40%;
+    background-image: url('/images/hitara9.jpg');
+    background-position: 50% 100%;
 }
 
 .bg-river {
-    background-image: url('/images/laxaikjos3.jpg');
+    background-image: url('/images/hitara23.JPG');
 }
 
 .bg-lodge {
-    background-image: url('/images/laxaikjos8.jpg');
-    background-position: 50% 85%;
+    background-image: url('/images/hitara9.jpg');
+    background-position: 50% 35%;
 }
 
 .bg-guides {
-    background-image: url('/images/laxaikjos6.jpg');
+    background-image: url('/images/hitara2.jpeg');
+    background-position: 50% 55%;
 }
 
 .bg-map {
