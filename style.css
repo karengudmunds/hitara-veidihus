@@ -310,6 +310,11 @@ footer p {
 
 .logo {
     max-width: 30%;
+    text-decoration: none;
+    font-size: 4vh;
+    font-weight: 900;
+    color: #1c2a2c;
+    letter-spacing: 1px;
 }
 
 /* image gallery section  */
